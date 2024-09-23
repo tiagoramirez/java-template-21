@@ -36,7 +36,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@417ae3ccd767c252f5661f1ace9f835f9654f2b5
+      uses: gradle/actions/setup-gradle@v4
       with:
         gradle-version: 8.10.1
 
@@ -47,7 +47,7 @@ jobs:
       run: ./gradlew test
 
     - name: Upload Coverage Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-report
         path: build/reports/jacoco/test/html
