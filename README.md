@@ -29,8 +29,12 @@ Follow these steps to get the project up and running locally:
 
 1. Clone the repository
 2. Start the Docker container by running the following command:
-```
+```sh
 docker-compose up -d --build
+```
+3. Test the API endpoint using any REST client with the following request:
+```sh
+curl --location --request GET 'http://localhost:8080/api/v1/hello-world'
 ```
 
 ## Running Tests
