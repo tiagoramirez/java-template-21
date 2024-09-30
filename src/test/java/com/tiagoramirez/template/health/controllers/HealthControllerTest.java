@@ -7,15 +7,15 @@ import org.junit.jupiter.api.Test;
 
 import com.tiagoramirez.template.health.dtos.response.BaseResponse;
 
-public class HelloWorldControllerTest {
-    
+public class HealthControllerTest {
+
     @Test
-    public void testHelloWorld() {
-        HelloWorldController helloWorldController = new HelloWorldController();
+    void testHealthCheck() {
+        HealthController helloWorldController = new HealthController();
 
-        BaseResponse response = helloWorldController.getHelloWorld().getBody();
+        BaseResponse response = helloWorldController.getHealthCheck().getBody();
 
-        assertEquals(response.getMessage(), "Hello World!");
+        assertEquals(response.getMessage(), "I'm alive!");
         assertNotNull(response.getDateTime());
     }
 }

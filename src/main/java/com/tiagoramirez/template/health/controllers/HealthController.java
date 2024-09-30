@@ -8,13 +8,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController()
-@RequestMapping("/hello-world")
-public class HelloWorldController {
+@RestController
+@RequestMapping("/health")
+public class HealthController {
 
     @GetMapping
-    public ResponseEntity<BaseResponse> getHelloWorld() {
-        BaseResponse response = new BaseResponse("Hello World!");
+    public ResponseEntity<BaseResponse> getHealthCheck() {
+        BaseResponse response = new BaseResponse("I'm alive!");
         return ResponseEntity.ok(response);
     }
 
