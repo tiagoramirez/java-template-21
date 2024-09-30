@@ -1,0 +1,7 @@
+services:
+  app:
+    extends:
+      file: docker-compose.yml
+      service: app
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod

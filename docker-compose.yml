@@ -1,5 +1,7 @@
 services:
   app:
+    image: tiagoramirez/java-template-21:latest
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
