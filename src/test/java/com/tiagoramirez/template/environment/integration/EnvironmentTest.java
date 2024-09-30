@@ -30,7 +30,7 @@ public class EnvironmentTest {
         String expectedSecretKey = "testSecretKey1";
         when(environmentService.getSecretKey1()).thenReturn(expectedSecretKey);
 
-        mockMvc.perform(get("/environment/secret-key-1") // Make sure this matches your actual endpoint
+        mockMvc.perform(get("/environment/secret-key-1")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message").value(expectedSecretKey))
@@ -42,7 +42,7 @@ public class EnvironmentTest {
         String expectedSecretKey = "testSecretKey2";
         when(environmentService.getSecretKey2()).thenReturn(expectedSecretKey);
 
-        mockMvc.perform(get("/environment/secret-key-2") // Make sure this matches your actual endpoint
+        mockMvc.perform(get("/environment/secret-key-2")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message").value(expectedSecretKey))
