@@ -1,7 +1,6 @@
-<!-- # {{project-name}} -->
+# Java 21 Template
 
-<!-- {{description}} -->
-
+This is a template project for Java 21 projects.
 
 ## Table of Contents
 
@@ -13,11 +12,11 @@
 
 ## Introduction
 
-<!-- {{introduction here}} -->
+This project is a template for Java 21 projects that includes a Dockerfile, a docker-compose.yml file, and a Spring Boot application with basic controllers, services, and tests.
 
 ## Prerequisites
 
-### Application Server
+### Java
 - Java Development Kit (JDK) version 21
 
 ### Infrastructure
@@ -34,7 +33,7 @@ docker compose up -d --build
 ```
 3. Test the API endpoint using any REST client with the following request:
 ```sh
-curl --location --request GET 'http://localhost:8080/api/v1/hello-world'
+curl --location --request GET 'http://localhost:8080/api/v1/health'
 ```
 
 ## Running Tests
