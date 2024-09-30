@@ -16,7 +16,7 @@ public class JacksonConfigTest {
     private ObjectMapper objectMapper;
 
     @Test
-    public void testObjectMapper() {
+    void testObjectMapper() {
         assertEquals(objectMapper.getPropertyNamingStrategy(), PropertyNamingStrategies.SNAKE_CASE);
     }
 }

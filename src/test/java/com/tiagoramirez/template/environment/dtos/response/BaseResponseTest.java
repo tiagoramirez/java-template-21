@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class BaseResponseTest {
 
     @Test
-    public void testBaseResponse() {
+    void testBaseResponse() {
         BaseResponse baseResponse = new BaseResponse("test");
 
         assertEquals("test", baseResponse.getMessage());

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class BaseResponseTest {
     
     @Test
-    public void testBaseResponse() {
+    void testBaseResponse() {
         LocalDateTime dateTimeNow = LocalDateTime.now();
         BaseResponse baseResponse = new BaseResponse("Hello World!");
         LocalDateTime dateTimeResponse = LocalDateTime.parse(baseResponse.getDateTime());

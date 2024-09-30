@@ -26,7 +26,7 @@ public class EnvironmentTest {
     private EnvironmentService environmentService;
 
     @Test
-    public void testGetSecretKey1() throws Exception {
+    void testGetSecretKey1() throws Exception {
         String expectedSecretKey = "testSecretKey1";
         when(environmentService.getSecretKey1()).thenReturn(expectedSecretKey);
 
@@ -38,7 +38,7 @@ public class EnvironmentTest {
     }
 
     @Test
-    public void testGetSecretKey2() throws Exception {
+    void testGetSecretKey2() throws Exception {
         String expectedSecretKey = "testSecretKey2";
         when(environmentService.getSecretKey2()).thenReturn(expectedSecretKey);
 

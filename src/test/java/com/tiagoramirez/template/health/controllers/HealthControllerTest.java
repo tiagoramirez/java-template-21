@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import com.tiagoramirez.template.health.dtos.response.BaseResponse;
 
 public class HealthControllerTest {
-    
+
     @Test
-    public void testHealthCheck() {
+    void testHealthCheck() {
         HealthController helloWorldController = new HealthController();
 
         BaseResponse response = helloWorldController.getHealthCheck().getBody();
