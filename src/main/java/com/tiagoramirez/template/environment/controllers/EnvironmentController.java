@@ -17,13 +17,6 @@ public class EnvironmentController {
     @Autowired
     private EnvironmentService environmentService;
 
-    @GetMapping("/profile")
-    public ResponseEntity<BaseResponse> getCurrentProfile() {
-        String profile = environmentService.getProfile();
-        BaseResponse response = new BaseResponse(profile);
-        return ResponseEntity.ok(response);
-    }
-
     @GetMapping("/secret-key-1")
     public ResponseEntity<BaseResponse> getSecretKey1() {
         String secretKey1 = environmentService.getSecretKey1();

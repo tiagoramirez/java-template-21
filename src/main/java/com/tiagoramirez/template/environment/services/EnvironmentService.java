@@ -10,10 +10,6 @@ public class EnvironmentService {
     @Autowired
     private Environment env;
 
-    public String getProfile() {
-        return env.getProperty("spring.profiles.active");
-    }
-
     public String getSecretKey1() {
         return env.getProperty("SECRET_KEY_1");
     }

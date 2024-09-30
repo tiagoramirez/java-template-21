@@ -20,15 +20,6 @@ public class EnvironmentControllerTest {
     private EnvironmentController environmentController;
 
     @Test
-    void testGetCurrentProfile() {
-        String profile = "production";
-
-        when(environmentService.getProfile()).thenReturn(profile);
-
-        assertEquals(profile, environmentController.getCurrentProfile().getBody().getMessage());
-    }
-
-    @Test
     void testGetSecretKey1() {
         String secretKey1 = "secret";
 

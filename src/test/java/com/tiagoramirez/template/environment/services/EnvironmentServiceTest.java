@@ -15,11 +15,6 @@ public class EnvironmentServiceTest {
     private EnvironmentService environmentService;
 
     @Test
-    void testGetProfile() {
-        assertEquals("local", environmentService.getProfile());
-    }
-
-    @Test
     void testGetSecretKey1() {
         System.setProperty("SECRET_KEY_1", "something");
 
