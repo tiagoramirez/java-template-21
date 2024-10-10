@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 public class JacksonConfig {
 
     @Bean
-    public ObjectMapper objectMapper(Jackson2ObjectMapperBuilder builder) {
+    ObjectMapper objectMapper(Jackson2ObjectMapperBuilder builder) {
         return builder
                 .propertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE)
                 .build();
