@@ -35,6 +35,7 @@ docker compose up -d --build
 ```sh
 curl --location --request GET 'http://localhost:8080/api/v1/health'
 ```
+4. You can also use the Swagger UI at `http://localhost:8080/api/v1/swagger-ui/index.html`
 
 ## Running Tests
 

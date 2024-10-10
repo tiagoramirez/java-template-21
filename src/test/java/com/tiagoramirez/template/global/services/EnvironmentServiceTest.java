@@ -1,4 +1,4 @@
-package com.tiagoramirez.template.environment.services;
+package com.tiagoramirez.template.global.services;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -15,17 +15,17 @@ public class EnvironmentServiceTest {
     private EnvironmentService environmentService;
 
     @Test
+    void testGet() {
+        System.setProperty("ULTRA_SECRET_KEY", "random");
+
+        assertEquals("random", environmentService.get("ULTRA_SECRET_KEY"));
+    }
+
+    @Test
     void testGetSecretKey1() {
         System.setProperty("SECRET_KEY_1", "something");
 
         assertEquals("something", environmentService.getSecretKey1());
-    }
-
-    @Test
-    void testGetSecretKey2() {
-        System.setProperty("SECRET_KEY_2", "another thing");
-
-        assertEquals("another thing", environmentService.getSecretKey2());
     }
 
 }
